@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gray : rgb(76, 76, 76);
+    --yellow : rgb(239, 212, 35);
+    --navHeight : 50px;
+}
+
+.container{
+    position : relative;
+    top : var(--navHeight);
+}
+
+
+/* TEST */ 
+
+
+/* NAVAVIGATION BAR */
+nav{
+    background-color : var(--gray);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--navHeight);
+}
+
+nav ul{
+    list-style-type: none;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    align-items: center;
+    text-align: center;
+    grid-gap: 10px;
+}
+
+nav li{
+    display: inline;
+}
+
+nav li a{
+    color : white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav li a:hover{
+    color : rgb();
+    background-color: #111;
+}
+
+
+
+/* ACCUEIL */ 
+
