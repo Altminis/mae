@@ -86,3 +86,28 @@ nav li a:hover{
     z-index: -1;
     height: 100%;;
 }
+
+/* OFFRES */
+
+#offres {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.offre{
+    display: grid;
+    padding: 20px;
+    background: var(--gray);
+    color: white;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 2px 1px black;
+}
+
+.offre .icon-offre{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
