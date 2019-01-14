@@ -33,27 +33,27 @@ nav ul{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    align-items: center;
-    text-align: center;
     grid-gap: 10px;
+    
 }
 
 nav li{
-    display: inline;
-}
-
-nav li a{
+    display : grid;
+    align-content: center;
+    text-align: center;
     color : white;
     text-decoration: none;
-    text-align: center;
 }
 
-nav li a:hover{
-    color : rgb();
-    background-color: #111;
+nav li:hover{
+   background-color : rgba(1, 1, 1, 0.2);
+   color : rgba(239, 212, 35, 0.8);
 }
 
-
+nav li:active{
+    background-color : rgba(1, 1, 1, 0.2);
+    color : rgb(239, 212, 35);
+}
 
 /* ACCUEIL */ 
 
