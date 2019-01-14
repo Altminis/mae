@@ -1,7 +1,14 @@
+@font-face {
+	font-family: "titillium";
+	src: url('./assets/fonts/titillium/TitilliumWeb-Regular.ttf');
+}
+
+
 *{
     padding: 0;
     margin : 0;
     box-sizing: border-box;
+    font-family: "titillium", sans-serif;
 }
 
 :root{
@@ -26,6 +33,7 @@ nav{
     top: 0;
     width: 100%;
     height: var(--navHeight);
+    z-index: 10;
 }
 
 nav ul{
@@ -57,3 +65,24 @@ nav li:active{
 
 /* ACCUEIL */ 
 
+
+#accueil {
+    display: grid;
+    min-height: calc(100vh - 50px);
+    background: var(--gray) url(./assets/images/home.jpg) no-repeat center;
+    background-size: 100% auto;
+    background-position: center;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    
+}
+
+#accueil img {
+    z-index: -1;
+    height: 100%;;
+}
