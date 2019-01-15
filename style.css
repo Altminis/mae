@@ -17,38 +17,35 @@
     --navHeight : 50px;
 }
 
-.container{
-    position : relative;
-    top : var(--navHeight);
-}
-
-
 /* TEST */ 
 
 
 /* NAVAVIGATION BAR */
 nav{
     background-color : var(--gray);
-    position: fixed;
     top: 0;
     width: 100%;
-    height: var(--navHeight);
     z-index: 10;
 }
 
+.fixed-nav nav{
+    position: fixed;
+}
+
 nav ul{
-    list-style-type: none;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    grid-gap: 10px;
+    margin: 0;
+    padding:0;
+    list-style: none;
+    display: flex;
     
 }
 
 nav li{
-    display : grid;
-    align-content: center;
+    flex: 1;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     color : white;
     text-decoration: none;
 }
@@ -63,12 +60,33 @@ nav li:active{
     color : rgb(239, 212, 35);
 }
 
+nav a{
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    background-image: url(./assets/images/logo.jpeg);
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(.78,1.55,.82,.87);
+}
+
+.fixed-nav nav .logo{
+    max-width: 100px;
+    background-size: cover;
+}
+
 /* ACCUEIL */ 
 
 
 #accueil {
     display: grid;
-    min-height: calc(100vh - 50px);
+    min-height: 80vh;
     background: var(--gray) url(./assets/images/home.jpg) no-repeat center;
     background-size: 100% auto;
     background-position: center;
