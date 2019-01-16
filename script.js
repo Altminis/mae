@@ -6,6 +6,9 @@ window.onload = function () {
     const topOfNav = nav.offsetTop;
     const offresContainer = document.querySelector('#offres');
     const offres = offresContainer.querySelectorAll('.offre');
+    const boutonBurger = document.querySelector('.toggle-nav');
+    const listNav = document.querySelector('.myNav ul');
+
 
     // Daily Event
 
@@ -33,4 +36,15 @@ window.onload = function () {
     window.addEventListener('resize', updateOffersHeight);
     updateOffersHeight();
 
+    boutonBurger.addEventListener('click', toggleNav);
+    function toggleNav(e){
+        this.classList.toggle('active');
+        listNav.classList.toggle('active');
+        e.preventDefault();
+    }
+
 }
+
+
+
+
