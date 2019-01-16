@@ -202,7 +202,7 @@ nav .logo{
     padding: 50px;
     margin: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 
@@ -243,5 +243,19 @@ nav .logo{
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 1017px) {
+    #offres {
+        margin: 40px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    #offres {
+        margin: 60px;
+        grid-template-columns: 1fr;
+    }
 }
 
