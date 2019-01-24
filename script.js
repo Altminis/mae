@@ -8,6 +8,7 @@ window.onload = function () {
     const offres = offresContainer.querySelectorAll('.offre');
     const boutonBurger = document.querySelector('.toggle-nav');
     const listNav = document.querySelector('.myNav ul');
+    
 
 
     // Daily Event
@@ -15,10 +16,13 @@ window.onload = function () {
     //Events for navbar
     window.addEventListener('scroll', fixNav);
     function fixNav() {
-        if (window.scrollY > topOfNav) {
+        
+        if (window.innerWidth > 740 && window.scrollY > topOfNav) {
             document.body.style.paddingTop = nav.offsetHeight + 'px';
             document.body.classList.add('fixed-nav');
-        } else {
+        }else if(window.innerWidth <= 740){
+            document.body.classList.add('fixed-nav');
+        }else {
             document.body.style.paddingTop = 0;
             document.body.classList.remove('fixed-nav');
         }
