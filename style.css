@@ -15,6 +15,8 @@
     --gray : rgb(76, 76, 76);
     --yellow : rgb(239, 212, 35);
     --navHeight : 50px;
+    --tablette : 740px;
+    --smartphone: 480px; 
 }
 
 /* TEST */ 
@@ -93,7 +95,7 @@ nav .logo{
 	}
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 740px) {
 	.myNav {
 		position:relative;
         display:inline-block;
@@ -196,6 +198,18 @@ nav .logo{
 }
 
 /* Responsive */
+@media screen and (max-width: 740px){
+    #accueil {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #accueil {
+        font-size: 18px;
+        min-height: 50vh;
+    }
+}
 
 /*@media screen and (max-width: 1017)*/
 
