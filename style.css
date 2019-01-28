@@ -301,6 +301,11 @@ nav .logo{
     font-size: 20px;
 }
 
+.form-contact input[type="submit"]:disabled {
+    background: gray;
+    color: white;
+}
+
 .form-contact textarea {
     min-height: 40px;
     resize: none;
