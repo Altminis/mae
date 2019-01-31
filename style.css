@@ -316,8 +316,69 @@ nav .logo{
 .form-contact {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(50%, 500px);
+}
+
+.form-group:nth-last-child(1){
+    justify-self: right;
+}
+
+.form-contact h2{
+    color: var(--yellow);
+    font-size: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.form-contact input, .form-contact textarea  {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+    background: var(--gray);
+    background: dimgray;
+    box-shadow: inset 4px 4px 4px var(--gray), inset -4px -4px 4px var(--gray);
+    color: white;
+
+}
+
+.form-contact input[type="submit"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 250px;
+    background-color: var(--yellow);
+    color: var(--gray);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.form-contact input[type="submit"]:disabled {
+    background: gray;
+    color: white;
+}
+
+.form-contact textarea {
+    min-height: 40px;
+    resize: none;
+    height: 200px;
+    padding-top: 5px;
+}
+
+.form-contact input::placeholder, .form-contact textarea::placeholder {
+    color: var(--yellow);
+    opacity: 0.5;
 }
 
 
+
+@media screen and (max-width: 480px) {
+    .form-group:nth-last-child(1){
+        justify-self: center;
+    }
+}
 

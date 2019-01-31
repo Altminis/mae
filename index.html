@@ -86,18 +86,20 @@
             <form action="" method="get" class="form-contact">
                 <h2>Contactez-moi</h2>
                 <div class="form-group">
-
+                    <input type="text" id="name" name="name" placeholder="Prénom NOM">
                 </div>
                 <div class="form-group">
-                    <input type="text" id="fname" name="fname" placeholder="Prénom" checked>
+                    <input type="text" id="tel" name="tel" placeholder="Téléphone">
                 </div>
                 <div class="form-group">
-                    <input type="text" id="lname" name="lname" placeholder="Nom" checked>
+                    <input type="text" id="email" name="email" placeholder="Adresse éléctronique">
                 </div>
-                <div class="label-group">
-                    <input type="submit" value="Envoyer">
+                <div class="form-group">
+                    <textarea rows="10" id="message" name="message" placeholder="Description du problème"></textarea>
                 </div>
-
+                <div class="form-group">
+                    <input type="submit" value="Envoyer" disabled>
+                </div>
             </form>
         </section>
     </div>
